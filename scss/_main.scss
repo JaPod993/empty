@@ -1,0 +1,30 @@
+$hero: #333;
+
+@mixin serifHeader {
+  font-family: "Bree Serif", sans-serif;
+}
+
+@mixin regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+@mixin bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+@mixin transition {
+  -webkit-transition: all .1s ease-out;
+  -o-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  @include regular;
+  color: $hero;
+  font-size: 16px;
+}
